@@ -3,24 +3,22 @@
 using namespace std;
 
 int main(){
-    int y;
-    cin >> y;
-    if(y<1918){
-        if(y%4==0)cout<<"12.09."<<y<<endl;
-        else cout<<"13.09."<<y<<endl;
+    int x;
+    cin >> x;
+    if(x<1918){
+        if(x%4==0)cout<<"12.09."<<x<<endl;
+        else cout<<"13.09."<<x<<endl;
     }
-    else if(y==1918){
-         cout<<"26.09."<<y<<endl;
+    else if(x==1918){
+         cout<<"26.09."<<x<<endl;
     }
     else{
-        if(y%400==0){
-            cout<<"12.09."<<y<<endl;
+        if(x%400==0){
+            cout<<"12.09."<<x<<endl;
         }
-        else if(y%4==0&&y%100!=0){
-            cout<<"12.09."<<y<<endl;
+        else if(x%4==0&&x%100!=0){
+            cout<<"12.09."<<x<<endl;
         }
-        else cout<<"13.09."<<y<<endl;
+        else cout<<"13.09."<<x<<endl;
     }
-    // your code goes here
-    return 0;
 }
